@@ -10,6 +10,7 @@
   "author": "k3nd0",
   "license": "ISC",
   "description": "A movie watchlist API developed with Node.js & Express",
+  "type" : "module",
   "dependencies": {
     "express": "^5.2.1"
   },
