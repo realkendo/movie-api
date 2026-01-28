@@ -10,11 +10,16 @@
   "author": "k3nd0",
   "license": "ISC",
   "description": "A movie watchlist API developed with Node.js & Express",
-  "type" : "module",
+  "type": "module",
   "dependencies": {
-    "express": "^5.2.1"
+    "@prisma/adapter-pg": "^7.3.0",
+    "@prisma/client": "^7.3.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.17.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "prisma": "^7.3.0"
   }
 }
