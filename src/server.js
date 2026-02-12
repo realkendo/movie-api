@@ -11,7 +11,7 @@ import authRoutes from "./routes/authRoutes.js";
 // config();
 await connectDB();
 
-const app = express(); //app instaciation
+const app = express(); //app instantiation
 const PORT = 5001; // setting port
 
 // body parsing middlewares
@@ -37,7 +37,7 @@ process.on("unhandledRejection", (err) => {
   });
 });
 
-// havdle uncaught exceptions
+// handle uncaught exceptions
 process.on("uncaughtException", async (err) => {
   console.error("Unhandled Exception: ", err);
   await disconnectDb();
