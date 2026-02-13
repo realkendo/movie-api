@@ -12,7 +12,7 @@ import authRoutes from "./routes/authRoutes.js";
 await connectDB();
 
 const app = express(); //app instantiation
-const PORT = 5001; // setting port
+const PORT = process.env.PORT; // setting port
 
 // body parsing middlewares
 app.use(express.json());
