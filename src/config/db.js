@@ -20,6 +20,7 @@ const prisma = new PrismaClient({
     connectionString === "development" ? ["query", "error", "warn"] : ["error"],
 });
 
+// async function to connect to the database
 const connectDB = async () => {
   try {
     await prisma.$connect();
@@ -34,6 +35,7 @@ const connectDB = async () => {
   }
 };
 
+// async function to disconnect to the database
 const disconnectDb = async () => {
   await prisma.$disconnect();
 };
